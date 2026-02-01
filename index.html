@@ -382,9 +382,14 @@
             color: var(--text-secondary);
         }
         
-        .pricing-card li::before {
+        .pricing-card li.included::before {
             content: "✓ ";
             color: var(--secondary);
+        }
+        
+        .pricing-card li.excluded::before {
+            content: "— ";
+            color: var(--text-secondary);
         }
         
         /* Footer */
@@ -605,17 +610,17 @@
                     <h3>Focusledger</h3>
                     <div class="price">$1.99<span></span></div>
                     <ul>
-                        <li>✓ Focus timer sessions</li>
-                        <li>✓ Pomodoro technique</li>
-                        <li>✓ Goals &amp; streaks</li>
-                        <li>✓ Daily journal</li>
-                        <li>✓ Quick notes</li>
-                        <li>✓ AI insights (manual data)</li>
-                        <li>✓ Calendar integration</li>
-                        <li>✓ Data export</li>
-                        <li style="color: var(--text-secondary);">— No automatic tracking</li>
-                        <li style="color: var(--text-secondary);">— No visual timeline</li>
-                        <li style="color: var(--text-secondary);">— No screenshots</li>
+                        <li class="included">Focus timer sessions</li>
+                        <li class="included">Pomodoro technique</li>
+                        <li class="included">Goals &amp; streaks</li>
+                        <li class="included">Daily journal</li>
+                        <li class="included">Quick notes</li>
+                        <li class="included">AI insights (manual data)</li>
+                        <li class="included">Calendar integration</li>
+                        <li class="included">Data export</li>
+                        <li class="excluded">No automatic tracking</li>
+                        <li class="excluded">No visual timeline</li>
+                        <li class="excluded">No screenshots</li>
                     </ul>
                     <a href="https://apps.apple.com/app/focusledger" class="btn-secondary" style="width: 100%; display: block; text-align: center;">Get on App Store</a>
                 </div>
@@ -623,14 +628,14 @@
                     <h3>Focusledger Pro</h3>
                     <div class="price">$14.99<span> once</span></div>
                     <ul>
-                        <li>✓ Everything in Lite, plus:</li>
-                        <li><strong>✓ Automatic activity tracking</strong></li>
-                        <li><strong>✓ Visual timeline with screenshots</strong></li>
-                        <li><strong>✓ Window title capture</strong></li>
-                        <li><strong>✓ Day/week/month comparison</strong></li>
-                        <li><strong>✓ Detailed app analytics</strong></li>
-                        <li>✓ One-time purchase</li>
-                        <li>✓ All future updates included</li>
+                        <li class="included">Everything in Lite, plus:</li>
+                        <li class="included"><strong>Automatic activity tracking</strong></li>
+                        <li class="included"><strong>Visual timeline with screenshots</strong></li>
+                        <li class="included"><strong>Window title capture</strong></li>
+                        <li class="included"><strong>Day/week/month comparison</strong></li>
+                        <li class="included"><strong>Detailed app analytics</strong></li>
+                        <li class="included">One-time purchase</li>
+                        <li class="included">All future updates included</li>
                     </ul>
                     <a href="#download" class="btn-primary" style="width: 100%; display: block; text-align: center;">Download Pro</a>
                 </div>
